@@ -1,17 +1,52 @@
 [
   {
+    "name": "Admin User",
+    "email": "admin@example.com",
+    "password": "admin@123"
+  },
+  {
     "name": "John Doe",
     "email": "john@example.com",
-    "password": "password123"
+    "password": "john@123"
   },
   {
     "name": "Jane Smith",
     "email": "jane@example.com",
-    "password": "password123"
+    "password": "jane@123"
   },
   {
-    "name": "Admin User",
-    "email": "admin@example.com",
-    "password": "password123"
+    "name": "Mike Johnson",
+    "email": "mike@example.com",
+    "password": "mike@123"
+  },
+  {
+    "name": "Sarah Williams",
+    "email": "sarah@example.com",
+    "password": "sarah@123"
+  },
+  {
+    "name": "David Brown",
+    "email": "david@example.com",
+    "password": "david@123"
+  },
+  {
+    "name": "Emily Davis",
+    "email": "emily@example.com",
+    "password": "emily@123"
+  },
+  {
+    "name": "Robert Wilson",
+    "email": "robert@example.com",
+    "password": "robert@123"
+  },
+  {
+    "name": "Jessica Martinez",
+    "email": "jessica@example.com",
+    "password": "jessica@123"
+  },
+  {
+    "name": "Thomas Anderson",
+    "email": "thomas@example.com",
+    "password": "thomas@123"
   }
 ]

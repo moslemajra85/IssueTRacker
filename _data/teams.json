@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Frontend Team",
+    "description": "Responsible for building and maintaining the user interface and frontend components of the application."
+  },
+  {
+    "name": "Backend Team",
+    "description": "Handles server-side development, API creation, database management, and infrastructure."
+  },
+  {
+    "name": "DevOps Team",
+    "description": "Manages deployment, continuous integration, cloud infrastructure, and system monitoring."
+  },
+  {
+    "name": "QA & Testing",
+    "description": "Ensures quality assurance through comprehensive testing and bug reporting."
+  },
+  {
+    "name": "Product Management",
+    "description": "Defines product strategy, roadmap, and coordinates with all teams on priorities."
+  },
+  {
+    "name": "Security Team",
+    "description": "Focuses on security audits, penetration testing, and protecting user data."
+  }
+]

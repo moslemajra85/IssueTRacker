@@ -1,6 +1,7 @@
 import User from "../models/user.js";
 import { validateUser } from "../utils/validate.js";
 import bcrypt, { hash } from "bcryptjs";
+import jwt from "jsonwebtoken";
 
 export const register = async (req, res) => {
   try {
@@ -39,4 +40,36 @@ export const register = async (req, res) => {
   } catch (error) {
     return res.status(500).json({ error: error.message });
   }
+};
+
+export const login = async (req, res) => {
+  // extract email and password from the request body
+
+  const { email, password } = req.body;
+
+  //  check if there is a user corresponding to the provided email
+
+  const user = await User.findOne({ email });
+
+  // if there is no user corresponding to the provided email return an error
+
+  if (!user) {
+    return res.status(400).json({ error: "Invalid credentials" });
+  }
+
+  // check if the password is correct
+
+  const isMatch = await bcrypt.compare(password, user.password);
+
+  // if the password is incorrect return an error
+  if (!isMatch) {
+    return res.status(400).json({ error: "Invalid credentials" });
+  }
+
+  // create a token for the user
+
+  const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET);
+
+  // send the token to the client
+  res.status(200).json(token);
 };

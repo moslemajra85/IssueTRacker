@@ -1,0 +1,11 @@
+import Team from "../models/team.js";
+import User from "../models/user.js";
+
+export const getAllTeams = async (req, res) => {
+  try {
+    const teams = await Team.find();
+    res.status(200).json(teams);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
